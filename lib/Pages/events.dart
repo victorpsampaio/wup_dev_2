@@ -179,6 +179,7 @@ class _EventListState extends State<EventList> {
                                     radius: 40,
                                   ),
                                   new Container(
+                                      alignment: Alignment(0.0, 0.0),
                                       padding: EdgeInsets.all(20),
                                       child: Column(
                                         children: <Widget>[
