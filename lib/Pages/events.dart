@@ -178,14 +178,14 @@ class _EventListState extends State<EventList> {
                                         NetworkImage(document['Imagem']),
                                     radius: 40,
                                   ),
-                                  new SizedBox(
-                                    width: 25,
-                                  ),
-                                  new Text(document['Nome']),
-                                  new SizedBox(
-                                    width: 50,
-                                  ),
-                                  new Text(document['Data']),
+                                  new Container(
+                                      padding: EdgeInsets.all(20),
+                                      child: Column(
+                                        children: <Widget>[
+                                          new Text(document['Nome']),
+                                          new Text(document['Data']),
+                                        ],
+                                      ))
                                 ],
                               ),
                             ),
