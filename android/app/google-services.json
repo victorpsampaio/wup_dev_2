@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "341451742397",
+    "firebase_url": "https://wup-2-1d18e.firebaseio.com",
+    "project_id": "wup-2-1d18e",
+    "storage_bucket": "wup-2-1d18e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:341451742397:android:09624d55870f176545abd4",
+        "android_client_info": {
+          "package_name": "com.wick.wup_dev_2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "341451742397-i6b8h1a9a9frsbsbh0r18skqcq3mdto8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOU4M8PvxkVDEIncCmQaHx3wGP3dTLwC0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "341451742397-i6b8h1a9a9frsbsbh0r18skqcq3mdto8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:341451742397:android:db4185d296b0eb6c45abd4",
+        "android_client_info": {
+          "package_name": "com.wickedup.wick.wup_desenvolvimento_2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "341451742397-i6b8h1a9a9frsbsbh0r18skqcq3mdto8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOU4M8PvxkVDEIncCmQaHx3wGP3dTLwC0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "341451742397-i6b8h1a9a9frsbsbh0r18skqcq3mdto8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
