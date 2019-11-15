@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:wup_dev_2/Pages/home.dart';
+ 
 
 class GeoPark extends StatefulWidget {
   @override
@@ -49,10 +50,88 @@ class _GeoParkState extends State<GeoPark> {
           body: new Padding(
               padding: EdgeInsets.fromLTRB(15, 15, 20, 2),
               child: ListView(
-
+                children: <Widget>[
+                  Card(
+                    child: new Container(
+                      padding: EdgeInsets.fromLTRB(15, 20, 0, 15),
+                      decoration: new BoxDecoration(
+                        color: Colors.white,
+                        border: new Border.all(
+                          color:  Colors.black, width: 0.5),
+                          borderRadius: new BorderRadius.circular(5.0),
+                        ),
+                        child: new InkWell(
+                          child: new Row(
+                            children: <Widget>[
+                              new CircleAvatar(
+                                backgroundImage: 
+                                ExactAssetImage('assets/imagens/peiropolis.jpeg'),
+                                radius: 40,
+                              ),
+                              new SizedBox(
+                                width: 25,
+                              ),
+                              new Column(
+                                children: <Widget>[
+                                  new Text('Peirópolis', 
+                                    style: TextStyle(fontWeight: FontWeight.bold),),
+                                  new SizedBox(
+                                    width: 50,
+                                    height: 10,
+                                  ),
+                                  new Text('Rua B, 105'),
+                                  new Text('Aberto das 8:00 até 17:00')        
+                                ],
+                              )
+                              
+                            ],
+                          ),
+                        
+                        ),
+                      ),
+                    ),
+                    Card(
+                    child: new Container(
+                      padding: EdgeInsets.fromLTRB(15, 20, 0, 15),
+                      decoration: new BoxDecoration(
+                        color: Colors.white,
+                        border: new Border.all(
+                          color:  Colors.black, width: 0.5),
+                          borderRadius: new BorderRadius.circular(5.0),
+                        ),
+                        child: new InkWell(
+                          child: Row(
+                            children: <Widget>[
+                              new CircleAvatar(
+                                backgroundImage: 
+                                AssetImage('assets/imagens/memorial_chico_xavier.jpeg'),
+                                radius: 40,
+                              ),
+                              new SizedBox(
+                                width: 25,
+                              ),
+                              new Column(
+                                children: <Widget>[
+                                  new Text('Memorial Chico Xavier',
+                                    style: TextStyle(fontWeight: FontWeight.bold)),
+                                  new SizedBox(
+                                    width: 50,
+                                    height: 10,
+                                  ),
+                                new Text('Avenida Joao XXIII, 2011'),
+                                new Text('Aberto das 13:00 até 18:00'),
+                                ],
+                              )
+                            ],
+                        ),
+                      ),
+                    ),
+                  )
+                ],
               )),
         )
       ],
     );
   }
 }
+
