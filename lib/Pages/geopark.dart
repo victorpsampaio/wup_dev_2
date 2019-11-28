@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_linkify/flutter_linkify.dart';
+import 'package:url_launcher/url_launcher.dart';
 import 'package:wup_dev_2/Pages/home.dart';
 
 class GeoPark extends StatefulWidget {

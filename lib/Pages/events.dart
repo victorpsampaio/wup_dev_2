@@ -169,14 +169,26 @@ class _EventListState extends State<EventList> {
                                         NetworkImage(document['Imagem']),
                                     radius: 40,
                                   ),
-                                  new Container(
-                                      padding: EdgeInsets.all(20),
-                                      child: Column(
-                                        children: <Widget>[
-                                          new Text(document['Nome']),
-                                          new Text(document['Data']),
-                                        ],
-                                      ))
+
+                                  new SizedBox(
+                                    width: 25,
+                                  ),
+                                  new Column(
+                                    crossAxisAlignment: CrossAxisAlignment.center,
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: <Widget>[
+                                      new Text(document['Nome'],
+                                          style: TextStyle(fontWeight: FontWeight.bold),
+                                      ),
+                                      new SizedBox(
+                                        width: 50,
+                                        height: 10,
+                                      ),
+                                      new Text(document['Data'])
+
+
+                                    ],
+                                  ),
                                 ],
                               ),
                             ),
@@ -235,24 +247,14 @@ class _DetailEventState extends State<DetailEvent> {
   Widget build(BuildContext context) {
     return Stack(
       children: <Widget>[
-        Scaffold(
-          body: new Image.asset(
-            'assets/back4.jpeg',
-            color: Color.fromARGB(255, 0, 255, 255),
-            colorBlendMode: BlendMode.color,
-            fit: BoxFit.cover,
-            height: double.infinity,
-            width: double.infinity,
-            alignment: Alignment.center,
-          ),
-        ),
+        
         Scaffold(
             appBar: AppBar(
-              backgroundColor: Colors.transparent,
+              backgroundColor: Color.fromRGBO(185, 32 , 169, 1),
               title: new Text("Informações do Evento"),
               actions: <Widget>[],
             ),
-            backgroundColor: Colors.transparent,
+            backgroundColor: Colors.black,
             body: new ListView(
               children: <Widget>[
                 new Column(
@@ -260,8 +262,8 @@ class _DetailEventState extends State<DetailEvent> {
                     new Padding(
                       padding: EdgeInsets.fromLTRB(0, 30, 0, 0),
                       child: new Text(
-                        "Nome: " + widget.nome,
-                        style: TextStyle(fontSize: 18, color: Colors.black),
+                         widget.nome,
+                        style: TextStyle(fontSize: 18, color: Colors.white),
                       ),
                     ),
                     Divider(),
@@ -269,7 +271,7 @@ class _DetailEventState extends State<DetailEvent> {
                       padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
                       child: new Text(
                         "Data: " + widget.data,
-                        style: TextStyle(fontSize: 18, color: Colors.black),
+                        style: TextStyle(fontSize: 18, color: Colors.white),
                       ),
                     ),
                     Divider(),
@@ -285,7 +287,7 @@ class _DetailEventState extends State<DetailEvent> {
                     Container(
                       child: Text(
                         "Descrição: " + widget.descricao,
-                        style: TextStyle(fontSize: 22, color: Colors.black),
+                        style: TextStyle(fontSize: 22, color: Colors.white),
                       ),
                       color: Colors.transparent,
                     ),
@@ -294,14 +296,15 @@ class _DetailEventState extends State<DetailEvent> {
                       onTap: _openMap,
                       child: Text(
                         "Endereço: " + widget.endereco,
-                        style: TextStyle(color: Colors.black),
+                        style: TextStyle(color: Colors.white),
                       ),
                     ),
                     Divider(),
                     InkWell(
                       child: Text(
                         "Contato: " + widget.link,
-                        style: TextStyle(color: Colors.black),
+                        style: TextStyle(color: Colors.white),
+                        textAlign: TextAlign.center,
                       ),
                       onTap: _openCall,
                     ),
@@ -312,8 +315,9 @@ class _DetailEventState extends State<DetailEvent> {
                           await launch(link.url);
                         }
                       },
-                      linkStyle: TextStyle(color: Colors.red),
+                      linkStyle: TextStyle(color: Colors.yellowAccent),
                       text: "Site: " + widget.site,
+                      style: TextStyle(color: Colors.white),
                       humanize: true,
                     ),
                     Divider(),
@@ -323,8 +327,9 @@ class _DetailEventState extends State<DetailEvent> {
                           await launch(link.url);
                         }
                       },
-                      linkStyle: TextStyle(color: Colors.red),
+                      linkStyle: TextStyle(color: Colors.yellowAccent),
                       text: "Rede Social: " + widget.rede,
+                      style: TextStyle(color: Colors.white),
                       humanize: true,
                     ),
                     Divider(),
