@@ -41,15 +41,12 @@ class _RestauranteState extends State<Restaurante> {
               padding: EdgeInsets.fromLTRB(15, 15, 20, 2),
               child: ListView(
                 children: <Widget>[
-                  Scaffold(
-                    body: Column(
-                      children: <Widget>[
-                        new Image.asset('assets/imagens/ferramentas.png'),
-                      ],
-
-                    )
+                  new Column(
+                    children: <Widget>[
+                      new Text("Em Construção",style: TextStyle(color: Colors.white,fontSize: 40),),
+                      new Image.asset('assets/imagens/Construcao.png'),
+                    ],
                   )
-                 
                 ]
               )),
         )

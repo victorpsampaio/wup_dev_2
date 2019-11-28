@@ -99,7 +99,7 @@ class _GeoParkState extends State<GeoPark> {
                                 radius: 40,
                               ),
                               new SizedBox(
-                                width: 25,
+                                width: 25
                               ),
                               new Column(
                                 children: <Widget>[
