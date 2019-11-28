@@ -236,23 +236,15 @@ class _DetailEventState extends State<DetailEvent> {
     return Stack(
       children: <Widget>[
         Scaffold(
-          body: new Image.asset(
-            'assets/back4.jpeg',
-            color: Color.fromARGB(255, 0, 255, 255),
-            colorBlendMode: BlendMode.color,
-            fit: BoxFit.cover,
-            height: double.infinity,
-            width: double.infinity,
-            alignment: Alignment.center,
-          ),
+          
         ),
         Scaffold(
             appBar: AppBar(
-              backgroundColor: Colors.transparent,
+              backgroundColor: Color.fromRGBO(179, 13, 106, 70),
               title: new Text("Informações do Evento"),
               actions: <Widget>[],
             ),
-            backgroundColor: Colors.transparent,
+            backgroundColor: Colors.grey[600],
             body: new ListView(
               children: <Widget>[
                 new Column(
