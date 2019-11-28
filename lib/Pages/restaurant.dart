@@ -12,17 +12,8 @@ class _RestauranteState extends State<Restaurante> {
     return Stack(
       children: <Widget>[
         Scaffold(
-          body: new Image.asset(
-            'assets/fundo1.jpeg',
-            fit: BoxFit.cover,
-            height: double.infinity,
-            width: double.infinity,
-            alignment: Alignment.center,
-          ),
-        ),
-        Scaffold(
           appBar: AppBar(
-            backgroundColor: Color(0x00AFD4FF),
+            backgroundColor: Color.fromRGBO(179, 13, 106, 70),
             title: new Center(
               child: Text("Restaurante WUP"),
             ),
@@ -45,104 +36,13 @@ class _RestauranteState extends State<Restaurante> {
               )
             ],
           ),
-          backgroundColor: Color(0x00AFD4FF),
+          backgroundColor: Colors.grey[600],
           body: new Padding(
               padding: EdgeInsets.fromLTRB(15, 15, 20, 2),
               child: ListView(
                 children: <Widget>[
-                  Card(
-                    child: new Container(
-                      padding: EdgeInsets.fromLTRB(15, 20, 0, 15),
-                      decoration: new BoxDecoration(
-                        color: Colors.white,
-                        border: new Border.all(
-                            color: Colors.black, width: 0.5),
-                        borderRadius: new BorderRadius.circular(5.0),
-                      ),
-                      child: new InkWell(
 
-                        child: Row(
-                          children: <Widget>[
-                            new CircleAvatar(
-                              backgroundImage:
-                              NetworkImage('Imagem'),
-                              radius: 40,
-                            ),
-                            new SizedBox(
-                              width: 25,
-                            ),
-                            new Text('Rest 1'),
-                            new SizedBox(
-                              width: 50,
-                            ),
-                            new Text('Aberto'),
-                          ],
-                        ),
-                      ),
-                    ),
-                  ),
-                  Card(
-                    child: new Container(
-                      padding: EdgeInsets.fromLTRB(15, 20, 0, 15),
-                      decoration: new BoxDecoration(
-                        color: Colors.white,
-                        border: new Border.all(
-                            color: Colors.black, width: 0.5),
-                        borderRadius: new BorderRadius.circular(5.0),
-                      ),
-                      child: new InkWell(
-
-                        child: Row(
-                          children: <Widget>[
-                            new CircleAvatar(
-                              backgroundImage:
-                              NetworkImage('Imagem'),
-                              radius: 40,
-                            ),
-                            new SizedBox(
-                              width: 25,
-                            ),
-                            new Text('Rest 2'),
-                            new SizedBox(
-                              width: 50,
-                            ),
-                            new Text('Aberto'),
-                          ],
-                        ),
-                      ),
-                    ),
-                  ),Card(
-                    child: new Container(
-                      padding: EdgeInsets.fromLTRB(15, 20, 0, 15),
-                      decoration: new BoxDecoration(
-                        color: Colors.white,
-                        border: new Border.all(
-                            color: Colors.black, width: 0.5),
-                        borderRadius: new BorderRadius.circular(5.0),
-                      ),
-                      child: new InkWell(
-
-                        child: Row(
-                          children: <Widget>[
-                            new CircleAvatar(
-                              backgroundImage:
-                              NetworkImage('Imagem'),
-                              radius: 40,
-                            ),
-                            new SizedBox(
-                              width: 25,
-                            ),
-                            new Text('Rest 3'),
-                            new SizedBox(
-                              width: 50,
-                            ),
-                            new Text('Aberto'),
-                          ],
-                        ),
-                      ),
-                    ),
-                  )
-                ],
+                ]
               )),
         )
       ],
