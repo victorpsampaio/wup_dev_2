@@ -28,37 +28,37 @@ class _NavegacaoState extends State<Navegacao> {
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: CurvedNavigationBar(
-        color: Colors.deepPurple,
+        color: Color.fromRGBO(179, 13, 106, 70),
         animationDuration: Duration(milliseconds: 600),
-        buttonBackgroundColor: Colors.black,
-        backgroundColor: Colors.black,
+        buttonBackgroundColor: Color.fromRGBO(179, 13, 106, 70),
+        backgroundColor: Colors.grey[600],
         animationCurve: Curves.easeInOut,
         items: <Widget>[
           Column(
             children: <Widget>[
               Icon(
                 Icons.event,
-                size: 20,
+                size: 25,
                 color: Colors.white,
               ),
               Text('Eventos',
-                  style: TextStyle(color: Colors.white, fontSize: 10))
+                  style: TextStyle(color: Colors.white, fontSize: 18))
             ],
           ),
           Column(
             children: <Widget>[
-              Icon(Icons.restaurant_menu, size: 20, color: Colors.white),
+              Icon(Icons.restaurant_menu, size: 25, color: Colors.white),
               Text(
-                'Restaurante',
-                style: TextStyle(color: Colors.white, fontSize: 10),
+                'Gourmet',
+                style: TextStyle(color: Colors.white, fontSize: 18),
               )
             ],
           ),
           Column(
             children: <Widget>[
-              Icon(Icons.explore, size: 20, color: Colors.white),
+              Icon(Icons.explore, size: 25, color: Colors.white),
               Text('GeoPark',
-                  style: TextStyle(color: Colors.white, fontSize: 10))
+                  style: TextStyle(color: Colors.white, fontSize: 18))
             ],
           )
         ],
@@ -105,17 +105,8 @@ class _EventListState extends State<EventList> {
             return new Stack(
               children: <Widget>[
                 Scaffold(
-                  body: new Image.asset(
-                    'assets/fundo1.jpeg',
-                    fit: BoxFit.cover,
-                    height: double.infinity,
-                    width: double.infinity,
-                    alignment: Alignment.center,
-                  ),
-                ),
-                Scaffold(
                   appBar: AppBar(
-                    backgroundColor: Color(0x00AFD4FF),
+                    backgroundColor: Color.fromRGBO(179, 13, 106, 70),
                     title: new Center(
                       child: Text("Eventos WUP"),
                     ),
@@ -141,7 +132,7 @@ class _EventListState extends State<EventList> {
                       )
                     ],
                   ),
-                  backgroundColor: Color(0x00AFD4FF),
+                  backgroundColor: Colors.grey[600],
                   body: new Padding(
                     padding: EdgeInsets.fromLTRB(15, 15, 20, 2),
                     child: ListView(

@@ -13,23 +13,14 @@ class _GeoParkState extends State<GeoPark> {
     return Stack(
       children: <Widget>[
         Scaffold(
-          body: new Image.asset(
-            'assets/fundo1.jpeg',
-            fit: BoxFit.cover,
-            height: double.infinity,
-            width: double.infinity,
-            alignment: Alignment.center,
-          ),
-        ),
-        Scaffold(
           appBar: AppBar(
-            backgroundColor: Color(0x00AFD4FF),
+            backgroundColor: Color.fromRGBO(179, 13, 106, 70),
             title: new Center(
               child: Text("GeoPark WUP"),
             ),
             actions: <Widget>[
               PopupMenuButton<int>(
-                icon: Icon(Icons.menu, color: Colors.white),
+                icon: Icon(Icons.menu, color: Colors.grey[600]),
                 itemBuilder: (context) => [
                   PopupMenuItem(
                     value: 1,
@@ -46,7 +37,7 @@ class _GeoParkState extends State<GeoPark> {
               )
             ],
           ),
-          backgroundColor: Color(0x00AFD4FF),
+          backgroundColor: Colors.grey[600],
           body: new Padding(
               padding: EdgeInsets.fromLTRB(15, 15, 20, 2),
               child: ListView(
