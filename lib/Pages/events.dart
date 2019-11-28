@@ -247,7 +247,6 @@ class _DetailEventState extends State<DetailEvent> {
   Widget build(BuildContext context) {
     return Stack(
       children: <Widget>[
-<<<<<<< HEAD
         
         Scaffold(
             appBar: AppBar(
@@ -256,18 +255,6 @@ class _DetailEventState extends State<DetailEvent> {
               actions: <Widget>[],
             ),
             backgroundColor: Colors.black,
-=======
-        Scaffold(
-          
-        ),
-        Scaffold(
-            appBar: AppBar(
-              backgroundColor: Color.fromRGBO(179, 13, 106, 70),
-              title: new Text("Informações do Evento"),
-              actions: <Widget>[],
-            ),
-            backgroundColor: Colors.grey[600],
->>>>>>> 767b4f057aa13d991ae7500ce10e0f3fd715341d
             body: new ListView(
               children: <Widget>[
                 new Column(
