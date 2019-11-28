@@ -20,7 +20,7 @@ class _GeoParkState extends State<GeoPark> {
             ),
             actions: <Widget>[
               PopupMenuButton<int>(
-                icon: Icon(Icons.menu, color: Colors.grey[600]),
+                icon: Icon(Icons.menu, color: Colors.white),
                 itemBuilder: (context) => [
                   PopupMenuItem(
                     value: 1,

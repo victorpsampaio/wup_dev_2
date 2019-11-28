@@ -31,7 +31,7 @@ class _HomePageState extends State<HomePage> {
                 Text(
                   'Seja bem-vindo à WUP \n Voce é:',
                   textAlign: TextAlign.center,
-                  style: TextStyle(color: Colors.black, fontSize: 18.0),
+                  style: TextStyle(color: Colors.black, fontSize: 19.0),
                 ),
                 Padding(
                   padding: EdgeInsets.fromLTRB(0, 60, 0, 25),
