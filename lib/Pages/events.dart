@@ -250,11 +250,11 @@ class _DetailEventState extends State<DetailEvent> {
         
         Scaffold(
             appBar: AppBar(
-              backgroundColor: Color.fromRGBO(185, 32 , 169, 1),
+              backgroundColor: Color.fromRGBO(179, 13, 106, 70),
               title: new Text("Informações do Evento"),
               actions: <Widget>[],
             ),
-            backgroundColor: Colors.black,
+            backgroundColor: Colors.grey[600],
             body: new ListView(
               children: <Widget>[
                 new Column(
