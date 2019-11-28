@@ -52,6 +52,13 @@ class _GeoParkState extends State<GeoPark> {
                         borderRadius: new BorderRadius.circular(5.0),
                       ),
                       child: new InkWell(
+                        onTap: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => GeoPark2(
+                                )));
+                              },
                         child: new Row(
                           children: <Widget>[
                             new CircleAvatar(
@@ -90,6 +97,13 @@ class _GeoParkState extends State<GeoPark> {
                         borderRadius: new BorderRadius.circular(5.0),
                       ),
                       child: new InkWell(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => GeoPark2(
+                                )));
+                              },
                         child: Row(
                           children: <Widget>[
                             new CircleAvatar(
@@ -138,11 +152,11 @@ class _GeoPark1State extends State<GeoPark1> {
       children: <Widget>[
         Scaffold(
             appBar: AppBar(
-              backgroundColor: Colors.transparent,
-              title: new Text("Informações do Evento"),
+              backgroundColor: Color.fromRGBO(179, 13, 106, 70),
+              title: new Text("Museu Chico Xavier"),
               actions: <Widget>[],
             ),
-            backgroundColor: Colors.transparent,
+            backgroundColor: Colors.grey[600],
             body: new ListView(
               children: <Widget>[
                 new Column(
@@ -178,7 +192,7 @@ class _GeoPark1State extends State<GeoPark1> {
                         "Descrição: ",
                         style: TextStyle(fontSize: 22, color: Colors.black),
                       ),
-                      color: Colors.transparent,
+                      color: Colors.grey[600],
                     ),
                     Divider(),
                     InkWell(
@@ -203,3 +217,81 @@ class _GeoPark1State extends State<GeoPark1> {
     );
   }
 }
+class GeoPark2 extends StatefulWidget {
+  @override
+  _GeoPark2State createState() => _GeoPark2State();
+}
+
+class _GeoPark2State extends State<GeoPark2> {
+  @override
+  Widget build(BuildContext context) {
+    return Stack(
+      children: <Widget>[
+        Scaffold(
+            appBar: AppBar(
+              backgroundColor: Color.fromRGBO(179, 13, 106, 70),
+              title: new Text("Museu Chico Xavier"),
+              actions: <Widget>[],
+            ),
+            backgroundColor: Colors.grey[600],
+            body: new ListView(
+              children: <Widget>[
+                new Column(
+                  children: <Widget>[
+                    new Padding(
+                      padding: EdgeInsets.fromLTRB(0, 30, 0, 0),
+                      child: new Text(
+                        "Nome: ",
+                        style: TextStyle(fontSize: 18, color: Colors.black),
+                      ),
+                    ),
+                    Divider(),
+                    new Padding(
+                      padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
+                      child: new Text(
+                        "Data: ",
+                        style: TextStyle(fontSize: 18, color: Colors.black),
+                      ),
+                    ),
+                    Divider(),
+                  ],
+                ),
+                Padding(
+                  padding: EdgeInsets.all(20),
+                  child: new Image.network(
+                      'assets/image/memorial_chico_xavier.jpeg'),
+                ),
+                Divider(),
+                new Column(
+                  children: <Widget>[
+                    Container(
+                      child: Text(
+                        "Descrição: ",
+                        style: TextStyle(fontSize: 22, color: Colors.black),
+                      ),
+                      color: Colors.grey[600],
+                    ),
+                    Divider(),
+                    InkWell(
+                      child: Text(
+                        "Endereço: ",
+                        style: TextStyle(color: Colors.black),
+                      ),
+                    ),
+                    Divider(),
+                    InkWell(
+                      child: Text(
+                        "Contato: ",
+                        style: TextStyle(color: Colors.black),
+                      ),
+                    ),
+                    Divider(),
+                  ],
+                ),
+              ],
+            ))
+      ],
+    );
+  }
+}
+
